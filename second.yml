@@ -1,0 +1,7 @@
+---
+
+- hosts: sanog-1
+  roles:
+    - geerlingguy.java
+  become: yes
+  become_method: sudo
