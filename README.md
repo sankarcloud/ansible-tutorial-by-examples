@@ -9,6 +9,7 @@ examples.
 
 1. Setup
 
+2. Directory Structure
 2. Example 1 - Hello World with `debug` module
    1. Understanding plays and playbooks
    2. Understanding the inventory file
@@ -60,9 +61,6 @@ Other Python dependencies:
 
   [pip][2] is the Python package manager.
 
-[1]: https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
-[2]: https://packaging.python.org/tutorials/installing-packages/
-
 ## Tutorial
 
 ### The directory structure
@@ -77,9 +75,40 @@ For now, lets get started by creating a new repository:
 
 ```
 # Create a new directory at a path of your choosing
-mkdir ansible-workshop
-cd ansible-workshop
+mkdir ansible-tutorial-by-examples
+cd ansible-tutorial-by-examples
 
 # Create an empty git repository so that you can commit your Ansible code
 git init
 ```
+
+Our directory structure is going to look like this:
+
+```
+ansible-tutorial-by-examples
+  |- host_vars/
+  |- group_vars/
+  |- roles/
+  |- installed_roles/
+  |- inventory
+  |- ansible.cfg
+  |- first.yml
+  |- second.yml
+  |- ...
+```
+
+* `host_vars` and `group_vars` - contain files with data in the form of
+  variables that will be used by our Ansible scripts/playbooks.
+* `roles` - logical units of setting up a system.
+* `installed_roles` - like roles but has roles installed using
+  [ansible-galaxy][3].
+* `inventory` - contains information about your hosts and group of hosts.
+* `ansible.cfg` - the main configuration file for Ansible.
+* `*.yml` files - Ansible playbooks in most of the cases.
+
+We will encounter these one-by-one in our tutorial as we go ahead. So don't
+bother about figuring out everything at this point.
+
+[1]: https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
+[2]: https://packaging.python.org/tutorials/installing-packages/
+[3]: http://docs.ansible.com/ansible/galaxy.html

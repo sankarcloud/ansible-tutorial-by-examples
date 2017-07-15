@@ -1,0 +1,8 @@
+---
+
+- hosts: sanog-1
+  tasks:
+    - shell: whoami
+      register: whoami
+
+    - debug: msg={{ whoami }}
