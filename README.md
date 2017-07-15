@@ -1,4 +1,4 @@
-# ansible-tutorial
+# ansible-tutorial-by-examples
 
 Content and code for the Ansible workshop I conducted at SANOG 2017 in Gurgaon.
 
@@ -8,19 +8,23 @@ examples.
 ## Table of Contents
 
 1. Setup
+
 2. Example 1 - Hello World with `debug` module
-  2.1 Understanding plays and playbooks
-  2.2 Understanding the inventory file
-  2.3 Understanding host grouping using inventory file
+   1. Understanding plays and playbooks
+   2. Understanding the inventory file
+   3. Understanding host grouping using inventory file
+
 3. Understanding `roles`
-  3.1 Example 2 - installing Java
-  3.2 Example 3 - installing Elasticsearch
-  3.3 Example 4 - installing the entire ELK stack
+   1. Example 2 - installing Java
+   2. Example 3 - installing Elasticsearch
+   3. Example 4 - installing the entire ELK stack
+
 4. Understanding variables and configuring roles
-  4.1 Example 5 - configuring the ELK stack with Nginx
-  4.2 Example 6 - using facts to configure JVM for Elasticsearch
+   1. Example 5 - configuring the ELK stack with Nginx
+   2. Example 6 - using facts to configure JVM for Elasticsearch
+
 5. Writing your custom role
-  5.1 Example 7 - write a role for Logstash forwarder
+   1. Example 7 - write a role for Logstash forwarder
 
 ## Setup
 
