@@ -1,6 +1,9 @@
-# ansible-workshop
+# ansible-tutorial
 
 Content and code for the Ansible workshop I conducted at SANOG 2017 in Gurgaon.
+
+This tutorial is an attempt to explain Ansible to beginners by using practical
+examples.
 
 ## Table of Contents
 
